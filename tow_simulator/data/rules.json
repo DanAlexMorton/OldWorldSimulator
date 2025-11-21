@@ -1,0 +1,35 @@
+{
+  "special_rules": {
+    "hatred": {
+      "name": "Hatred",
+      "description": "Reroll failed to-hit rolls in first round of combat",
+      "effect": "reroll_hits_round1"
+    },
+    "fear": {
+      "name": "Fear",
+      "description": "Enemy units must pass Leadership test to charge or be charged",
+      "effect": "leadership_test_on_charge"
+    },
+    "frenzy": {
+      "name": "Frenzy",
+      "description": "+1 Attack, must charge if able, immune to psychology",
+      "effect": "extra_attack_must_charge"
+    },
+    "animosity": {
+      "name": "Animosity",
+      "description": "Roll for animosity at start of turn",
+      "effect": "animosity_test"
+    },
+    "stubborn": {
+      "name": "Stubborn",
+      "description": "Use base Leadership for break tests",
+      "effect": "ignore_combat_res_modifier"
+    },
+    "fly": {
+      "name": "Fly",
+      "description": "Can move over terrain and units",
+      "effect": "flying_movement"
+    }
+  }
+}
+

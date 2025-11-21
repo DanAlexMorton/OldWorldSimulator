@@ -1,0 +1,40 @@
+{
+  "faction": "Orcs & Goblins",
+  "army_special_rules": [
+    "animosity",
+    "waaagh"
+  ],
+  "units": {
+    "core": [
+      "orc_boyz",
+      "goblin_warriors",
+      "goblin_archers"
+    ],
+    "special": [
+      "orc_boar_boyz",
+      "black_orcs",
+      "goblin_wolf_riders"
+    ],
+    "rare": [
+      "trolls",
+      "giants",
+      "rock_lobber"
+    ]
+  },
+  "characters": {
+    "lords": [
+      "orc_warboss",
+      "goblin_great_shaman"
+    ],
+    "heroes": [
+      "orc_big_boss",
+      "goblin_shaman",
+      "night_goblin_big_boss"
+    ]
+  },
+  "magic_lores": [
+    "lore_of_da_big_waaagh",
+    "lore_of_da_little_waaagh"
+  ]
+}
+

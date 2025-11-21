@@ -1,0 +1,28 @@
+{
+  "army_name": "Empire Sample Army",
+  "faction": "empire",
+  "points_limit": 2000,
+  "units": [
+    {
+      "type": "empire_general",
+      "equipment": ["full_plate_armor", "great_weapon"],
+      "points": 150
+    },
+    {
+      "type": "empire_state_troops",
+      "size": 20,
+      "equipment": ["shields", "hand_weapons"],
+      "command": ["champion", "musician", "standard"],
+      "points": 125
+    },
+    {
+      "type": "empire_knights",
+      "size": 5,
+      "equipment": ["lances"],
+      "command": ["champion", "musician", "standard"],
+      "points": 145
+    }
+  ],
+  "total_points": 420
+}
+

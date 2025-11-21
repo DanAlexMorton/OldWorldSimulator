@@ -1,0 +1,40 @@
+{
+  "faction": "Empire",
+  "army_special_rules": [
+    "detachments"
+  ],
+  "units": {
+    "core": [
+      "empire_state_troops",
+      "empire_spearmen",
+      "empire_crossbowmen",
+      "empire_handgunners"
+    ],
+    "special": [
+      "empire_knights",
+      "empire_greatswords"
+    ],
+    "rare": [
+      "empire_cannon",
+      "empire_steam_tank"
+    ]
+  },
+  "characters": {
+    "lords": [
+      "empire_general",
+      "arch_lector"
+    ],
+    "heroes": [
+      "captain",
+      "warrior_priest",
+      "battle_wizard"
+    ]
+  },
+  "magic_lores": [
+    "lore_of_light",
+    "lore_of_heavens",
+    "lore_of_life",
+    "lore_of_fire"
+  ]
+}
+
