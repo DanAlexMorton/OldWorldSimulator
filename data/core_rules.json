@@ -1,0 +1,68 @@
+{
+  "to_hit_modifiers": {
+    "long_range": -1,
+    "cover": -1,
+    "moving_and_shooting": -1,
+    "skirmisher_target": -1,
+    "large_target": 1,
+    "charging": 0,
+    "flank": 0,
+    "rear": 0
+  },
+  "to_wound_modifiers": {
+    "poisoned": 0,
+    "flaming": 0
+  },
+  "combat_resolution": {
+    "max_rank_bonus": 3,
+    "max_overkill": 5,
+    "standard": 1,
+    "flank": 1,
+    "rear": 2,
+    "charging": 1,
+    "outnumber": 1
+  },
+  "constants": {
+    "max_to_hit": 2,
+    "min_to_hit": 6,
+    "always_hit_on": 6,
+    "always_wound_on": 6,
+    "always_fail_on": 1,
+    "max_save": 2,
+    "min_save": 6
+  },
+  "dice": {
+    "d6_min": 1,
+    "d6_max": 6,
+    "leadership_test": "2d6",
+    "charge_distance": "2d6",
+    "flee_distance": "2d6",
+    "pursuit_distance": "2d6"
+  },
+  "movement": {
+    "base_movement": {
+      "infantry": 4,
+      "cavalry": 8,
+      "monster": 6,
+      "war_machine": 3
+    },
+    "march_multiplier": 2,
+    "charge_minimum": 0,
+    "difficult_terrain_penalty": -1
+  },
+  "psychology": {
+    "fear_test_distance": 6,
+    "terror_test_distance": 6,
+    "panic_test_distance": 6,
+    "base_leadership": 7,
+    "stubborn_ignore_cr": true,
+    "steadfast_min_rank": 3
+  },
+  "magic": {
+    "power_dice_base": 2,
+    "dispel_dice_base": 2,
+    "max_power_dice_per_spell": 6,
+    "irresistible_force": 12,
+    "miscast_threshold": 12
+  }
+}

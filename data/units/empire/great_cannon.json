@@ -1,0 +1,59 @@
+{
+  "name": "Great Cannon",
+  "faction": "Empire",
+  "category": "Special",
+  "troop_type": "War Machine",
+  "base_size": "Special",
+  
+  "profile": {
+    "M": 0,
+    "WS": 0,
+    "BS": 0,
+    "S": 0,
+    "T": 7,
+    "W": 3,
+    "I": 0,
+    "A": 0,
+    "Ld": 0
+  },
+  
+  "crew": {
+    "models": 3,
+    "profile": {
+      "M": 4,
+      "WS": 3,
+      "BS": 3,
+      "S": 3,
+      "T": 3,
+      "W": 1,
+      "I": 3,
+      "A": 1,
+      "Ld": 7
+    }
+  },
+  
+  "points": {
+    "base": 120,
+    "per_model": 0,
+    "min_unit_size": 1,
+    "max_unit_size": 1
+  },
+  
+  "equipment": {
+    "default": ["Great Cannon"],
+    "crew_equipment": ["Hand Weapon"]
+  },
+  
+  "weapons": {
+    "Great Cannon": {
+      "range": 48,
+      "strength": 10,
+      "special_rules": ["Artillery", "Multiple Wounds (D6)", "Armor Piercing (3)"]
+    }
+  },
+  
+  "special_rules": ["War Machine", "Multiple Wounds (D6)", "Armor Piercing (3)"],
+  
+  "description": "The Great Cannon fires massive iron balls that can shatter castle walls and obliterate entire units."
+}
+

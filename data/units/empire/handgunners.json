@@ -1,0 +1,59 @@
+{
+  "name": "Handgunners",
+  "faction": "Empire",
+  "category": "Core",
+  "troop_type": "Infantry",
+  "base_size": "25mm",
+  
+  "profile": {
+    "M": 4,
+    "WS": 3,
+    "BS": 3,
+    "S": 3,
+    "T": 3,
+    "W": 1,
+    "I": 3,
+    "A": 1,
+    "Ld": 7
+  },
+  
+  "points": {
+    "base": 0,
+    "per_model": 9,
+    "min_unit_size": 10,
+    "max_unit_size": 30
+  },
+  
+  "equipment": {
+    "default": ["Hand Weapon", "Handgun", "Light Armor"],
+    "options": []
+  },
+  
+  "weapons": {
+    "Handgun": {
+      "range": 24,
+      "strength": 4,
+      "armor_piercing": 1,
+      "special_rules": ["Move or Fire", "Armor Piercing (1)"]
+    }
+  },
+  
+  "command": {
+    "champion": {
+      "name": "Marksman",
+      "cost": 10,
+      "BS": 4
+    },
+    "musician": {
+      "cost": 5
+    },
+    "standard_bearer": {
+      "cost": 10
+    }
+  },
+  
+  "special_rules": ["Move or Fire"],
+  
+  "description": "Armed with black powder weapons, Handgunners can pierce even the thickest armor."
+}
+

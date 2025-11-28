@@ -1,0 +1,87 @@
+{
+  "Empire": {
+    "units": {
+      "halberdiers": {"points": 11, "category": "core", "min": 10, "max": 50},
+      "swordsmen": {"points": 8, "category": "core", "min": 10, "max": 50},
+      "spearmen": {"points": 7, "category": "core", "min": 10, "max": 50},
+      "handgunners": {"points": 9, "category": "core", "min": 10, "max": 30},
+      "crossbowmen": {"points": 9, "category": "core", "min": 10, "max": 30},
+      "archers": {"points": 7, "category": "core", "min": 10, "max": 30},
+      "free_company": {"points": 6, "category": "core", "min": 10, "max": 30},
+      
+      "greatswords": {"points": 13, "category": "special", "min": 10, "max": 30},
+      "knightly_orders": {"points": 24, "category": "special", "min": 5, "max": 15},
+      "pistoliers": {"points": 18, "category": "special", "min": 5, "max": 10},
+      "outriders": {"points": 21, "category": "special", "min": 5, "max": 10},
+      "great_cannon": {"points": 120, "category": "special", "min": 1, "max": 1},
+      "mortar": {"points": 85, "category": "special", "min": 1, "max": 1},
+      
+      "demigryph_knights": {"points": 62, "category": "rare", "min": 3, "max": 10},
+      "steam_tank": {"points": 275, "category": "rare", "min": 1, "max": 1, "army_limit": 1},
+      "helblaster": {"points": 120, "category": "rare", "min": 1, "max": 1},
+      "flagellants": {"points": 12, "category": "rare", "min": 10, "max": 30}
+    },
+    "characters": {
+      "general": {"points": 85, "category": "lords"},
+      "wizard_lord": {"points": 225, "category": "lords"},
+      "grand_master": {"points": 155, "category": "lords"},
+      
+      "captain": {"points": 60, "category": "heroes"},
+      "battle_wizard": {"points": 90, "category": "heroes"},
+      "warrior_priest": {"points": 95, "category": "heroes"},
+      "engineer": {"points": 45, "category": "heroes"}
+    },
+    "limits": {
+      "steam_tank": 1
+    }
+  },
+  
+  "Orcs_Goblins": {
+    "units": {
+      "orc_boyz": {"points": 8, "category": "core", "min": 10, "max": 50},
+      "orc_arrer_boyz": {"points": 9, "category": "core", "min": 10, "max": 30},
+      "goblins": {"points": 4, "category": "core", "min": 20, "max": 60},
+      "night_goblins": {"points": 5, "category": "core", "min": 20, "max": 60},
+      "goblin_wolf_riders": {"points": 12, "category": "core", "min": 5, "max": 20},
+      
+      "black_orcs": {"points": 13, "category": "special", "min": 10, "max": 30},
+      "savage_orcs": {"points": 10, "category": "special", "min": 10, "max": 40},
+      "boar_boyz": {"points": 18, "category": "special", "min": 5, "max": 15},
+      "orc_boar_chariot": {"points": 85, "category": "special", "min": 1, "max": 1},
+      "trolls": {"points": 40, "category": "special", "min": 1, "max": 6},
+      
+      "giant": {"points": 200, "category": "rare", "min": 1, "max": 1, "army_limit": 1},
+      "arachnarok": {"points": 290, "category": "rare", "min": 1, "max": 1},
+      "doom_diver": {"points": 80, "category": "rare", "min": 1, "max": 1},
+      "rock_lobber": {"points": 85, "category": "rare", "min": 1, "max": 1}
+    },
+    "characters": {
+      "orc_warboss": {"points": 95, "category": "lords"},
+      "savage_orc_warboss": {"points": 105, "category": "lords"},
+      "goblin_great_shaman": {"points": 185, "category": "lords"},
+      
+      "orc_big_boss": {"points": 55, "category": "heroes"},
+      "goblin_big_boss": {"points": 40, "category": "heroes"},
+      "orc_shaman": {"points": 75, "category": "heroes"},
+      "goblin_shaman": {"points": 55, "category": "heroes"}
+    },
+    "limits": {
+      "giant": 1
+    }
+  },
+  
+  "composition_rules": {
+    "lords": {"max_percent": 25},
+    "heroes": {"max_percent": 50},
+    "core": {"min_percent": 25},
+    "special": {"max_percent": 50},
+    "rare": {"max_percent": 25}
+  },
+  
+  "points_limits": {
+    "standard": 2000,
+    "small": 1000,
+    "large": 3000
+  }
+}
+

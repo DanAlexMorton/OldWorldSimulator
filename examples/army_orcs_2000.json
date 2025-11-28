@@ -1,0 +1,146 @@
+{
+  "name": "Orc Waaagh! Army",
+  "faction": "Orcs & Goblins",
+  "points_limit": 2000,
+  "total_points": 1998,
+  
+  "army_composition": {
+    "lords": [],
+    "heroes": [
+      {
+        "name": "Warboss Grimgor",
+        "type": "Orc Warboss",
+        "is_general": true,
+        "equipment": ["Great Weapon", "Heavy Armor"],
+        "mount": "War Boar",
+        "magic_items": [],
+        "points": 185
+      },
+      {
+        "name": "Orc Shaman",
+        "type": "Orc Shaman",
+        "magic_level": 2,
+        "lore": "Lore of Da Big Waaagh!",
+        "equipment": ["Hand Weapon"],
+        "points": 100
+      },
+      {
+        "name": "Big Boss",
+        "type": "Orc Big Boss",
+        "is_bsb": true,
+        "equipment": ["Hand Weapon", "Heavy Armor", "Shield"],
+        "points": 75
+      }
+    ],
+    "core": [
+      {
+        "name": "Orc Boyz Mob Alpha",
+        "type": "Orc Boyz",
+        "models": 30,
+        "equipment": ["Choppas", "Light Armor", "Shields"],
+        "command": {
+          "champion": true,
+          "musician": true,
+          "standard_bearer": true
+        },
+        "formation": {"ranks": 6, "files": 5},
+        "points": 235
+      },
+      {
+        "name": "Orc Boyz Mob Beta",
+        "type": "Orc Boyz",
+        "models": 25,
+        "equipment": ["Choppas", "Light Armor", "Shields"],
+        "command": {
+          "champion": true,
+          "musician": true,
+          "standard_bearer": true
+        },
+        "formation": {"ranks": 5, "files": 5},
+        "points": 195
+      },
+      {
+        "name": "Orc Arrer Boyz",
+        "type": "Orc Arrer Boyz",
+        "models": 20,
+        "equipment": ["Bows", "Light Armor"],
+        "command": {
+          "musician": true
+        },
+        "formation": {"ranks": 4, "files": 5},
+        "points": 130
+      },
+      {
+        "name": "Goblin Archer Horde",
+        "type": "Goblin Archers",
+        "models": 40,
+        "equipment": ["Bows"],
+        "command": {
+          "champion": true,
+          "musician": true,
+          "standard_bearer": true
+        },
+        "formation": {"ranks": 8, "files": 5},
+        "points": 185
+      }
+    ],
+    "special": [
+      {
+        "name": "Black Orcs",
+        "type": "Black Orcs",
+        "models": 15,
+        "equipment": ["Choppas", "Heavy Armor", "Shields"],
+        "command": {
+          "champion": true,
+          "musician": true,
+          "standard_bearer": true
+        },
+        "formation": {"ranks": 3, "files": 5},
+        "points": 240
+      },
+      {
+        "name": "Boar Boyz",
+        "type": "Orc Boar Boyz",
+        "models": 10,
+        "equipment": ["Choppas", "Spears", "Light Armor", "Shields"],
+        "command": {
+          "champion": true,
+          "musician": true,
+          "standard_bearer": true
+        },
+        "formation": {"ranks": 2, "files": 5},
+        "points": 205
+      },
+      {
+        "name": "Trolls",
+        "type": "Trolls",
+        "models": 5,
+        "equipment": [],
+        "command": {},
+        "formation": {"ranks": 1, "files": 5},
+        "points": 175
+      }
+    ],
+    "rare": [
+      {
+        "name": "Rock Lobber",
+        "type": "Rock Lobber",
+        "crew": 3,
+        "points": 85
+      },
+      {
+        "name": "Doom Diver Catapult",
+        "type": "Doom Diver Catapult",
+        "crew": 3,
+        "points": 80
+      }
+    ]
+  },
+  
+  "army_special_rules": ["Animosity", "Waaagh!", "'Ere We Go!"],
+  
+  "deployment_notes": "Deploy in multiple waves. Orc Boyz front. Black Orcs with BSB center. Boar Boyz and Warboss on flank. Goblins in rear for shooting. Artillery behind.",
+  
+  "tactics": "Advance aggressively. Use Waaagh! to charge turn 2. Hit enemy line with overwhelming numbers. Boar Boyz flank charge. Shaman casts Fists of Gork on Orc Boyz."
+}
+

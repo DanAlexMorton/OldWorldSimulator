@@ -1,0 +1,142 @@
+{
+  "name": "Empire Gunline Army",
+  "faction": "Empire",
+  "points_limit": 2000,
+  "total_points": 1995,
+  
+  "army_composition": {
+    "lords": [],
+    "heroes": [
+      {
+        "name": "Empire Captain",
+        "type": "Captain",
+        "is_general": true,
+        "equipment": ["Hand Weapon", "Full Plate Armor", "Shield"],
+        "magic_items": [],
+        "points": 75
+      },
+      {
+        "name": "Battle Wizard",
+        "type": "Battle Wizard",
+        "magic_level": 2,
+        "lore": "Lore of Fire",
+        "equipment": ["Hand Weapon"],
+        "points": 90
+      }
+    ],
+    "core": [
+      {
+        "name": "Halberdiers Regiment",
+        "type": "State Troops",
+        "models": 30,
+        "equipment": ["Halberds", "Light Armor", "Shields"],
+        "command": {
+          "champion": true,
+          "musician": true,
+          "standard_bearer": true
+        },
+        "formation": {"ranks": 5, "files": 6},
+        "points": 235
+      },
+      {
+        "name": "Swordsmen Regiment",
+        "type": "State Troops",
+        "models": 20,
+        "equipment": ["Hand Weapons", "Light Armor", "Shields"],
+        "command": {
+          "champion": true,
+          "musician": true,
+          "standard_bearer": true
+        },
+        "formation": {"ranks": 4, "files": 5},
+        "points": 145
+      },
+      {
+        "name": "Handgunner Detachment",
+        "type": "Handgunners",
+        "models": 10,
+        "equipment": ["Handguns", "Light Armor"],
+        "command": {
+          "champion": true
+        },
+        "formation": {"ranks": 2, "files": 5},
+        "points": 100
+      },
+      {
+        "name": "Crossbowmen",
+        "type": "Crossbowmen",
+        "models": 10,
+        "equipment": ["Crossbows", "Light Armor"],
+        "command": {},
+        "formation": {"ranks": 2, "files": 5},
+        "points": 90
+      },
+      {
+        "name": "Knights of Sigmar",
+        "type": "Knights of the Empire",
+        "models": 8,
+        "equipment": ["Lances", "Heavy Armor", "Shields", "Barding"],
+        "command": {
+          "champion": true,
+          "musician": true,
+          "standard_bearer": true
+        },
+        "formation": {"ranks": 2, "files": 4},
+        "points": 226
+      },
+      {
+        "name": "Knights of the Blazing Sun",
+        "type": "Knights of the Empire",
+        "models": 5,
+        "equipment": ["Lances", "Heavy Armor", "Shields", "Barding"],
+        "command": {
+          "musician": true
+        },
+        "formation": {"ranks": 1, "files": 5},
+        "points": 120
+      }
+    ],
+    "special": [
+      {
+        "name": "Greatswords",
+        "type": "Greatswords",
+        "models": 15,
+        "equipment": ["Great Weapons", "Heavy Armor"],
+        "command": {
+          "champion": true,
+          "musician": true,
+          "standard_bearer": true
+        },
+        "formation": {"ranks": 3, "files": 5},
+        "points": 240
+      },
+      {
+        "name": "Great Cannon Alpha",
+        "type": "Great Cannon",
+        "crew": 3,
+        "points": 120
+      },
+      {
+        "name": "Great Cannon Beta",
+        "type": "Great Cannon",
+        "crew": 3,
+        "points": 120
+      }
+    ],
+    "rare": [
+      {
+        "name": "Helblaster Volley Gun",
+        "type": "Helblaster Volley Gun",
+        "crew": 3,
+        "points": 110
+      }
+    ]
+  },
+  
+  "army_special_rules": ["Detachments", "Faith and Gunpowder"],
+  
+  "deployment_notes": "Deploy in gunline formation. Halberdiers center with Handgunners on flanks. Knights on wings. Cannons in rear. Wizard with Greatswords.",
+  
+  "tactics": "Hold with infantry blocks. Shoot with handguns and artillery. Charge flanks with knights when opportunity presents. Use Fireball to soften enemy before combat."
+}
+

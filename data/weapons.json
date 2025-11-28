@@ -1,0 +1,142 @@
+{
+  "ranged": {
+    "handgun": {
+      "name": "Handgun",
+      "range": 24,
+      "strength": 4,
+      "ap": -1,
+      "shots": 1,
+      "type": "move_or_fire",
+      "special_rules": ["Armour Piercing"]
+    },
+    "crossbow": {
+      "name": "Crossbow",
+      "range": 30,
+      "strength": 4,
+      "ap": 0,
+      "shots": 1,
+      "type": "move_or_fire",
+      "special_rules": []
+    },
+    "bow": {
+      "name": "Bow",
+      "range": 24,
+      "strength": 3,
+      "ap": 0,
+      "shots": 1,
+      "type": "standard",
+      "special_rules": []
+    },
+    "longbow": {
+      "name": "Longbow",
+      "range": 30,
+      "strength": 3,
+      "ap": 0,
+      "shots": 1,
+      "type": "standard",
+      "special_rules": []
+    },
+    "shortbow": {
+      "name": "Shortbow",
+      "range": 18,
+      "strength": 3,
+      "ap": 0,
+      "shots": 1,
+      "type": "standard",
+      "special_rules": []
+    },
+    "throwing_axes": {
+      "name": "Throwing Axes",
+      "range": 8,
+      "strength": 4,
+      "ap": 0,
+      "shots": 1,
+      "type": "quick_shot",
+      "special_rules": ["Quick to Fire"]
+    },
+    "pistol": {
+      "name": "Pistol",
+      "range": 12,
+      "strength": 4,
+      "ap": -1,
+      "shots": 1,
+      "type": "standard",
+      "special_rules": ["Armour Piercing"]
+    },
+    "great_cannon": {
+      "name": "Great Cannon",
+      "range": 48,
+      "strength": 10,
+      "ap": -4,
+      "shots": 1,
+      "type": "artillery",
+      "special_rules": ["Multiple Wounds D6", "Armour Piercing"]
+    },
+    "mortar": {
+      "name": "Mortar",
+      "range": 48,
+      "strength": 3,
+      "ap": 0,
+      "shots": 1,
+      "type": "artillery",
+      "special_rules": ["Template", "Indirect Fire"]
+    },
+    "doom_diver": {
+      "name": "Doom Diver",
+      "range": 48,
+      "strength": 5,
+      "ap": -2,
+      "shots": 1,
+      "type": "artillery",
+      "special_rules": ["Armour Piercing"]
+    },
+    "rock_lobber": {
+      "name": "Rock Lobber",
+      "range": 48,
+      "strength": 8,
+      "ap": -3,
+      "shots": 1,
+      "type": "artillery",
+      "special_rules": ["Stone Thrower"]
+    }
+  },
+  "melee": {
+    "hand_weapon": {
+      "name": "Hand Weapon",
+      "strength_bonus": 0,
+      "ap": 0,
+      "special_rules": []
+    },
+    "great_weapon": {
+      "name": "Great Weapon",
+      "strength_bonus": 2,
+      "ap": -1,
+      "special_rules": ["Strikes Last", "Requires Two Hands"]
+    },
+    "halberd": {
+      "name": "Halberd",
+      "strength_bonus": 1,
+      "ap": 0,
+      "special_rules": ["Requires Two Hands"]
+    },
+    "lance": {
+      "name": "Lance",
+      "strength_bonus": 2,
+      "ap": -1,
+      "special_rules": ["Charging Only", "Cavalry"]
+    },
+    "spear": {
+      "name": "Spear",
+      "strength_bonus": 0,
+      "ap": 0,
+      "special_rules": ["Fight in Extra Rank"]
+    },
+    "choppa": {
+      "name": "Choppa",
+      "strength_bonus": 0,
+      "ap": 0,
+      "special_rules": ["Choppas"]
+    }
+  }
+}
+

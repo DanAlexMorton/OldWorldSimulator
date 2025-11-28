@@ -1,0 +1,133 @@
+{
+  "name": "Empire 2000pts - Combined Arms",
+  "faction": "Empire",
+  "points_target": 2000,
+  "units": [
+    {
+      "name": "Halberdiers",
+      "models": 30,
+      "movement": 4,
+      "strength": 3,
+      "toughness": 3,
+      "special_rules": ["Halberd"],
+      "category": "core"
+    },
+    {
+      "name": "Swordsmen",
+      "models": 25,
+      "movement": 4,
+      "strength": 3,
+      "toughness": 3,
+      "special_rules": ["Shield"],
+      "category": "core"
+    },
+    {
+      "name": "Handgunners",
+      "models": 20,
+      "movement": 4,
+      "strength": 3,
+      "toughness": 3,
+      "special_rules": ["Shooting", "Handgun"],
+      "category": "core"
+    },
+    {
+      "name": "Crossbowmen",
+      "models": 15,
+      "movement": 4,
+      "strength": 3,
+      "toughness": 3,
+      "special_rules": ["Shooting", "Crossbow"],
+      "category": "core"
+    },
+    {
+      "name": "Knightly Orders",
+      "models": 10,
+      "movement": 8,
+      "strength": 3,
+      "toughness": 3,
+      "special_rules": ["Lance", "Cavalry"],
+      "category": "special"
+    },
+    {
+      "name": "Greatswords",
+      "models": 20,
+      "movement": 4,
+      "strength": 4,
+      "toughness": 3,
+      "special_rules": ["Great Weapon", "Stubborn"],
+      "category": "special"
+    },
+    {
+      "name": "Great Cannon",
+      "models": 1,
+      "movement": 0,
+      "strength": 10,
+      "toughness": 7,
+      "special_rules": ["War Machine", "Shooting"],
+      "category": "special"
+    },
+    {
+      "name": "Demigryph Knights",
+      "models": 3,
+      "movement": 8,
+      "strength": 4,
+      "toughness": 4,
+      "special_rules": ["Monstrous Cavalry", "Fear"],
+      "category": "rare"
+    },
+    {
+      "name": "General",
+      "models": 1,
+      "movement": 4,
+      "strength": 4,
+      "toughness": 4,
+      "special_rules": ["General", "Inspiring Presence"],
+      "category": "lords"
+    },
+    {
+      "name": "Captain",
+      "models": 1,
+      "movement": 4,
+      "strength": 4,
+      "toughness": 4,
+      "special_rules": ["BSB"],
+      "category": "heroes"
+    },
+    {
+      "name": "Battle Wizard",
+      "models": 1,
+      "movement": 4,
+      "strength": 3,
+      "toughness": 3,
+      "special_rules": ["Wizard", "Level 2"],
+      "category": "heroes"
+    },
+    {
+      "name": "Warrior Priest",
+      "models": 1,
+      "movement": 4,
+      "strength": 4,
+      "toughness": 4,
+      "special_rules": ["Prayers of Sigmar", "Hatred"],
+      "category": "heroes"
+    }
+  ],
+  "calculated_points": {
+    "breakdown": {
+      "halberdiers_30": 330,
+      "swordsmen_25": 200,
+      "handgunners_20": 180,
+      "crossbowmen_15": 135,
+      "knightly_orders_10": 240,
+      "greatswords_20": 260,
+      "great_cannon": 120,
+      "demigryph_knights_3": 186,
+      "general": 85,
+      "captain": 60,
+      "battle_wizard": 90,
+      "warrior_priest": 95
+    },
+    "total": 1981
+  },
+  "model_count": 127
+}

@@ -1,40 +1,93 @@
 {
   "faction": "Orcs & Goblins",
   "army_special_rules": [
-    "animosity",
-    "waaagh"
+    "Animosity",
+    "Waaagh!",
+    "Ere We Go!",
+    "Might of Da Big 'Uns"
   ],
+  "list_building_rules": {
+    "core_minimum": 25,
+    "lords_maximum": 25,
+    "heroes_maximum": 50,
+    "special_maximum": 50,
+    "rare_maximum": 25,
+    "max_lords": 4,
+    "max_heroes": 6,
+    "max_bsb": 1,
+    "duplicate_limit": 3,
+    "special_restrictions": {
+      "Giant": {
+        "max_total": 1
+      },
+      "Goblin Units": {
+        "must_have_orc_general_or_outnumber": true,
+        "ld_penalty_without_orcs": -1
+      },
+      "Night Goblin Units": {
+        "can_only_be_led_by_night_goblin_characters": true
+      }
+    },
+    "minimum_unit_sizes": {
+      "Orc Boyz": 10,
+      "Goblin Warriors": 20,
+      "Night Goblins": 20,
+      "Black Orcs": 10
+    }
+  },
   "units": {
     "core": [
-      "orc_boyz",
-      "goblin_warriors",
-      "goblin_archers"
+      "Orc Boyz",
+      "Orc Arrer Boyz",
+      "Goblin Warriors",
+      "Goblin Archers",
+      "Night Goblins",
+      "Forest Goblin Spider Riders"
     ],
     "special": [
-      "orc_boar_boyz",
-      "black_orcs",
-      "goblin_wolf_riders"
+      "Black Orcs",
+      "Orc Boar Boyz",
+      "Goblin Wolf Riders",
+      "Goblin Chariots",
+      "Trolls",
+      "Orc Boar Chariots"
     ],
     "rare": [
-      "trolls",
-      "giants",
-      "rock_lobber"
+      "Giant",
+      "Rock Lobber",
+      "Doom Diver Catapult",
+      "Snotling Pump Wagon",
+      "Arachnarok Spider"
     ]
   },
   "characters": {
     "lords": [
-      "orc_warboss",
-      "goblin_great_shaman"
+      "Orc Warboss",
+      "Savage Orc Warboss",
+      "Black Orc Warboss",
+      "Goblin Great Shaman",
+      "Night Goblin Great Shaman"
     ],
     "heroes": [
-      "orc_big_boss",
-      "goblin_shaman",
-      "night_goblin_big_boss"
+      "Orc Big Boss",
+      "Savage Orc Big Boss",
+      "Black Orc Big Boss",
+      "Goblin Big Boss",
+      "Night Goblin Big Boss",
+      "Orc Shaman",
+      "Goblin Shaman",
+      "Night Goblin Shaman"
     ]
   },
   "magic_lores": [
-    "lore_of_da_big_waaagh",
-    "lore_of_da_little_waaagh"
-  ]
+    "Lore of Da Big Waaagh!",
+    "Lore of Da Little Waaagh!"
+  ],
+  "mount_options": {
+    "Orc Warboss": ["Wyvern", "Boar", "Great Cave Squig"],
+    "Goblin Great Shaman": ["Great Cave Squig", "Gigantic Spider"],
+    "Orc Big Boss": ["Boar", "War Boar"],
+    "Goblin Big Boss": ["Giant Wolf", "Great Cave Squig", "Gigantic Spider"]
+  }
 }
 

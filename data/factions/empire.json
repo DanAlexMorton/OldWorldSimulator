@@ -1,40 +1,85 @@
 {
   "faction": "Empire",
   "army_special_rules": [
-    "detachments"
+    "Detachments",
+    "Faith and Gunpowder"
   ],
+  "list_building_rules": {
+    "core_minimum": 25,
+    "lords_maximum": 25,
+    "heroes_maximum": 50,
+    "special_maximum": 50,
+    "rare_maximum": 25,
+    "max_lords": 4,
+    "max_heroes": 6,
+    "max_bsb": 1,
+    "duplicate_limit": 3,
+    "special_restrictions": {
+      "Steam Tank": {
+        "max_total": 1,
+        "requires_engineer": false
+      },
+      "Detachments": {
+        "must_be_attached_to_core": true,
+        "max_per_parent": 2,
+        "max_size_half_parent": true
+      }
+    }
+  },
   "units": {
     "core": [
-      "empire_state_troops",
-      "empire_spearmen",
-      "empire_crossbowmen",
-      "empire_handgunners"
+      "State Troops (Swordsmen)",
+      "State Troops (Spearmen)",
+      "State Troops (Halberdiers)",
+      "Archers",
+      "Crossbowmen",
+      "Handgunners",
+      "Knightly Orders",
+      "Pistoliers"
     ],
     "special": [
-      "empire_knights",
-      "empire_greatswords"
+      "Greatswords",
+      "Demigryph Knights",
+      "Outriders",
+      "Great Cannon",
+      "Helblaster Volley Gun",
+      "Helstorm Rocket Battery"
     ],
     "rare": [
-      "empire_cannon",
-      "empire_steam_tank"
+      "Flagellants",
+      "Steam Tank",
+      "Luminark of Hysh"
     ]
   },
   "characters": {
     "lords": [
-      "empire_general",
-      "arch_lector"
+      "Empire General",
+      "Arch Lector",
+      "Grand Master",
+      "Wizard Lord"
     ],
     "heroes": [
-      "captain",
-      "warrior_priest",
-      "battle_wizard"
+      "Captain",
+      "Warrior Priest",
+      "Battle Wizard",
+      "Master Engineer"
     ]
   },
   "magic_lores": [
-    "lore_of_light",
-    "lore_of_heavens",
-    "lore_of_life",
-    "lore_of_fire"
-  ]
+    "Lore of Light",
+    "Lore of Heavens",
+    "Lore of Life",
+    "Lore of Fire",
+    "Lore of Beasts",
+    "Lore of Metal",
+    "Lore of Shadow",
+    "Lore of Death"
+  ],
+  "mount_options": {
+    "General": ["Warhorse", "Imperial Griffon", "Imperial Pegasus"],
+    "Captain": ["Warhorse", "Imperial Pegasus"],
+    "Wizard Lord": ["Warhorse", "Imperial Griffon", "Imperial Pegasus"],
+    "Battle Wizard": ["Warhorse"]
+  }
 }
 

@@ -2,16 +2,11 @@
 Factions module - Army book loaders (JSON parsers)
 """
 
-def load_faction(faction_name):
-    """
-    Load faction data from JSON file
-    
-    Args:
-        faction_name: Name of the faction to load
-    
-    Returns:
-        dict: Faction data
-    """
-    # TODO: Implement faction loader
-    pass
+from .loader import UnitLoader, load_unit, load_character, get_loader
+from .army_builder import ArmyBuilder, load_army_from_json
+
+__all__ = [
+    "UnitLoader", "load_unit", "load_character", "get_loader",
+    "ArmyBuilder", "load_army_from_json"
+]
 

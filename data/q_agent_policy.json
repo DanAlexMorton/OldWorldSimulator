@@ -1,0 +1,321 @@
+{
+  "dist=mid, ratio=outnumbered, type=cavalry": {
+    "action": "hold",
+    "q_value": 14.23,
+    "all_actions": {
+      "hold": 14.23,
+      "flank_left": 1.196,
+      "forward": 3.132,
+      "flank_right": 0.866,
+      "march": 1.311
+    }
+  },
+  "dist=mid, ratio=even, type=artillery": {
+    "action": "refuse",
+    "q_value": 5.653,
+    "all_actions": {
+      "flank_left": 0.71,
+      "flank_right": 0.609,
+      "forward": 0.666,
+      "refuse": 5.653,
+      "march": 0.281,
+      "hold": 0.602
+    }
+  },
+  "dist=far, ratio=even, type=infantry": {
+    "action": "march",
+    "q_value": 18.133,
+    "all_actions": {
+      "hold": 4.405,
+      "flank_left": 4.007,
+      "refuse": 2.924,
+      "march": 18.133,
+      "forward": 1.037,
+      "flank_right": 6.617
+    }
+  },
+  "dist=far, ratio=even, type=artillery": {
+    "action": "flank_left",
+    "q_value": 5.403,
+    "all_actions": {
+      "hold": 0.0,
+      "forward": 0.651,
+      "flank_right": 0.552,
+      "flank_left": 5.403,
+      "refuse": 0.617,
+      "march": 1.443
+    }
+  },
+  "dist=far, ratio=even, type=cavalry": {
+    "action": "forward",
+    "q_value": 2.613,
+    "all_actions": {
+      "hold": 0.646,
+      "flank_right": 0.409,
+      "forward": 2.613,
+      "march": 1.134,
+      "flank_left": 0.634,
+      "refuse": 0.595
+    }
+  },
+  "dist=very_far, ratio=even, type=cavalry": {
+    "action": "march",
+    "q_value": 2.217,
+    "all_actions": {
+      "flank_left": 0.183,
+      "march": 2.217,
+      "refuse": 0.149,
+      "hold": 0.253,
+      "forward": 0.248,
+      "flank_right": 0.413
+    }
+  },
+  "dist=far, ratio=outnumbered, type=infantry": {
+    "action": "forward",
+    "q_value": 2.434,
+    "all_actions": {
+      "forward": 2.434,
+      "flank_left": 0.391,
+      "refuse": 0.434,
+      "flank_right": 0.413,
+      "hold": 0.193,
+      "march": 0.396
+    }
+  },
+  "dist=very_far, ratio=outnumbered, type=artillery": {
+    "action": "march",
+    "q_value": 3.139,
+    "all_actions": {
+      "refuse": -1.157,
+      "hold": -0.019,
+      "flank_right": 0.344,
+      "march": 3.139,
+      "forward": 0.551,
+      "flank_left": 0.115
+    }
+  },
+  "dist=mid, ratio=outnumber, type=cavalry": {
+    "action": "forward",
+    "q_value": 1.802,
+    "all_actions": {
+      "forward": 1.802,
+      "flank_left": 0.136,
+      "march": -0.05,
+      "hold": 0.285,
+      "refuse": 0.608,
+      "flank_right": 0.679
+    }
+  },
+  "dist=mid, ratio=outnumbered, type=artillery": {
+    "action": "flank_right",
+    "q_value": 2.404,
+    "all_actions": {
+      "flank_right": 2.404,
+      "forward": 0.542,
+      "hold": 0.18,
+      "march": -0.001,
+      "refuse": 0.51,
+      "flank_left": 0.308
+    }
+  },
+  "dist=mid, ratio=even, type=infantry": {
+    "action": "hold",
+    "q_value": 18.692,
+    "all_actions": {
+      "refuse": 4.585,
+      "hold": 18.692,
+      "flank_left": 5.874,
+      "forward": 2.289,
+      "march": 1.605,
+      "flank_right": 0.05
+    }
+  },
+  "dist=mid, ratio=even, type=cavalry": {
+    "action": "forward",
+    "q_value": 1.621,
+    "all_actions": {
+      "forward": 1.621,
+      "hold": 0.888,
+      "flank_right": 0.628,
+      "march": 0.395,
+      "flank_left": 0.931
+    }
+  },
+  "dist=far, ratio=outnumber, type=infantry": {
+    "action": "flank_right",
+    "q_value": 7.341,
+    "all_actions": {
+      "flank_right": 7.341,
+      "flank_left": 1.01,
+      "forward": 0.967,
+      "hold": 1.003,
+      "march": 1.514
+    }
+  },
+  "dist=mid, ratio=outnumber, type=infantry": {
+    "action": "refuse",
+    "q_value": 8.973,
+    "all_actions": {
+      "refuse": 8.973,
+      "hold": 2.972,
+      "flank_right": 0.85,
+      "march": 0.531,
+      "flank_left": 1.467,
+      "forward": 0.989
+    }
+  },
+  "dist=very_far, ratio=even, type=infantry": {
+    "action": "march",
+    "q_value": 16.006,
+    "all_actions": {
+      "flank_right": 3.824,
+      "hold": 3.391,
+      "march": 16.006,
+      "refuse": 5.321,
+      "flank_left": 7.374,
+      "forward": 4.788
+    }
+  },
+  "dist=far, ratio=outnumbered, type=cavalry": {
+    "action": "march",
+    "q_value": 13.735,
+    "all_actions": {
+      "march": 13.735,
+      "refuse": 1.684,
+      "flank_right": 1.659,
+      "hold": 2.731,
+      "flank_left": 2.032
+    }
+  },
+  "dist=very_far, ratio=outnumbered, type=infantry": {
+    "action": "march",
+    "q_value": 1.714,
+    "all_actions": {
+      "flank_left": -0.299,
+      "hold": -0.162,
+      "flank_right": 0.096,
+      "forward": 0.364,
+      "march": 1.714,
+      "refuse": 0.141
+    }
+  },
+  "dist=mid, ratio=outnumbered, type=infantry": {
+    "action": "forward",
+    "q_value": 0.989,
+    "all_actions": {
+      "forward": 0.989,
+      "flank_left": 0.1,
+      "flank_right": 0.433,
+      "hold": 0.469,
+      "refuse": 0.68,
+      "march": 0.47
+    }
+  },
+  "dist=very_far, ratio=outnumbered, type=cavalry": {
+    "action": "flank_right",
+    "q_value": 10.199,
+    "all_actions": {
+      "refuse": -0.346,
+      "hold": 0.867,
+      "march": 2.187,
+      "flank_right": 10.199,
+      "forward": 1.163,
+      "flank_left": 0.486
+    }
+  },
+  "dist=far, ratio=outnumbered, type=artillery": {
+    "action": "forward",
+    "q_value": 3.379,
+    "all_actions": {
+      "forward": 3.379,
+      "refuse": 0.186,
+      "march": 0.631,
+      "hold": 1.276,
+      "flank_left": 0.803,
+      "flank_right": 0.272
+    }
+  },
+  "dist=far, ratio=outnumber, type=artillery": {
+    "action": "flank_right",
+    "q_value": 2.971,
+    "all_actions": {
+      "flank_right": 2.971,
+      "flank_left": 1.574,
+      "forward": 0.605,
+      "march": 1.586,
+      "hold": 0.585
+    }
+  },
+  "dist=mid, ratio=outnumber, type=artillery": {
+    "action": "flank_left",
+    "q_value": 2.652,
+    "all_actions": {
+      "flank_left": 2.652,
+      "flank_right": 0.48,
+      "march": 0.797,
+      "forward": 0.78,
+      "refuse": 1.447,
+      "hold": 0.411
+    }
+  },
+  "dist=very_far, ratio=outnumber, type=cavalry": {
+    "action": "march",
+    "q_value": 2.541,
+    "all_actions": {
+      "flank_right": -0.936,
+      "forward": 1.297,
+      "refuse": -0.403,
+      "hold": -0.287,
+      "flank_left": 0.248,
+      "march": 2.541
+    }
+  },
+  "dist=far, ratio=outnumber, type=cavalry": {
+    "action": "flank_right",
+    "q_value": 2.75,
+    "all_actions": {
+      "flank_right": 2.75,
+      "refuse": 0.262,
+      "hold": 0.587,
+      "march": 0.534,
+      "flank_left": 1.334,
+      "forward": 0.992
+    }
+  },
+  "dist=very_far, ratio=even, type=artillery": {
+    "action": "flank_left",
+    "q_value": 2.368,
+    "all_actions": {
+      "hold": -1.073,
+      "refuse": -0.621,
+      "forward": -0.405,
+      "flank_left": 2.368,
+      "flank_right": -0.293,
+      "march": 0.162
+    }
+  },
+  "dist=very_far, ratio=outnumber, type=artillery": {
+    "action": "flank_left",
+    "q_value": 1.67,
+    "all_actions": {
+      "flank_left": 1.67,
+      "refuse": 0.18,
+      "hold": 0.024,
+      "march": 0.266,
+      "flank_right": 0.615,
+      "forward": 0.56
+    }
+  },
+  "dist=very_far, ratio=outnumber, type=infantry": {
+    "action": "flank_right",
+    "q_value": 4.797,
+    "all_actions": {
+      "flank_right": 4.797,
+      "flank_left": 0.114,
+      "hold": 0.111,
+      "march": 0.847,
+      "forward": 0.538,
+      "refuse": 0.7
+    }
+  }
+}

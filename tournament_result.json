@@ -1,0 +1,20 @@
+{
+  "tournament": "Old World Grand Tournament 2025",
+  "total_games": 10000,
+  "total_time": "34.7s",
+  "champion": "Orc Waaagh!",
+  "matchups": [
+    {
+      "army_a": "Empire Gunline",
+      "army_b": "Orc Waaagh!",
+      "games": 10000,
+      "army_a_wins": 0,
+      "army_b_wins": 10000,
+      "draws": 0,
+      "army_a_win_rate": 0.0,
+      "army_b_win_rate": 100.0,
+      "average_turns": 6.0,
+      "average_game_time": 0.0026169979333877562
+    }
+  ]
+}

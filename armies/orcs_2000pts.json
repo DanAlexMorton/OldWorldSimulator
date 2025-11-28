@@ -1,0 +1,133 @@
+{
+  "name": "Orcs & Goblins 2000pts - WAAAGH!",
+  "faction": "Orcs_Goblins",
+  "points_target": 2000,
+  "units": [
+    {
+      "name": "Orc Boyz",
+      "models": 40,
+      "movement": 4,
+      "strength": 3,
+      "toughness": 4,
+      "special_rules": ["Choppa", "Animosity"],
+      "category": "core"
+    },
+    {
+      "name": "Orc Boyz",
+      "models": 30,
+      "movement": 4,
+      "strength": 3,
+      "toughness": 4,
+      "special_rules": ["Choppa", "Animosity", "Shield"],
+      "category": "core"
+    },
+    {
+      "name": "Goblins",
+      "models": 40,
+      "movement": 4,
+      "strength": 3,
+      "toughness": 3,
+      "special_rules": ["Animosity"],
+      "category": "core"
+    },
+    {
+      "name": "Goblin Wolf Riders",
+      "models": 10,
+      "movement": 9,
+      "strength": 3,
+      "toughness": 3,
+      "special_rules": ["Fast Cavalry", "Shooting"],
+      "category": "core"
+    },
+    {
+      "name": "Black Orcs",
+      "models": 25,
+      "movement": 4,
+      "strength": 4,
+      "toughness": 4,
+      "special_rules": ["Immune to Psychology", "Armed to da Teef"],
+      "category": "special"
+    },
+    {
+      "name": "Boar Boyz",
+      "models": 10,
+      "movement": 7,
+      "strength": 4,
+      "toughness": 4,
+      "special_rules": ["Cavalry", "Boar Charge"],
+      "category": "special"
+    },
+    {
+      "name": "Trolls",
+      "models": 3,
+      "movement": 6,
+      "strength": 5,
+      "toughness": 4,
+      "special_rules": ["Regeneration", "Stupidity", "Vomit Attack"],
+      "category": "special"
+    },
+    {
+      "name": "Giant",
+      "models": 1,
+      "movement": 6,
+      "strength": 6,
+      "toughness": 5,
+      "special_rules": ["Terror", "Large Target", "Stubborn"],
+      "category": "rare"
+    },
+    {
+      "name": "Doom Diver",
+      "models": 1,
+      "movement": 0,
+      "strength": 5,
+      "toughness": 3,
+      "special_rules": ["War Machine", "Shooting"],
+      "category": "rare"
+    },
+    {
+      "name": "Orc Warboss",
+      "models": 1,
+      "movement": 4,
+      "strength": 5,
+      "toughness": 5,
+      "special_rules": ["General", "WAAAGH!"],
+      "category": "lords"
+    },
+    {
+      "name": "Orc Big Boss",
+      "models": 1,
+      "movement": 4,
+      "strength": 4,
+      "toughness": 5,
+      "special_rules": ["BSB"],
+      "category": "heroes"
+    },
+    {
+      "name": "Orc Shaman",
+      "models": 1,
+      "movement": 4,
+      "strength": 3,
+      "toughness": 4,
+      "special_rules": ["Wizard", "Level 2"],
+      "category": "heroes"
+    }
+  ],
+  "calculated_points": {
+    "breakdown": {
+      "orc_boyz_40": 320,
+      "orc_boyz_30": 240,
+      "goblins_40": 160,
+      "goblin_wolf_riders_10": 120,
+      "black_orcs_25": 325,
+      "boar_boyz_10": 180,
+      "trolls_3": 120,
+      "giant": 200,
+      "doom_diver": 80,
+      "orc_warboss": 95,
+      "orc_big_boss": 55,
+      "orc_shaman": 75
+    },
+    "total": 1970
+  },
+  "model_count": 162
+}

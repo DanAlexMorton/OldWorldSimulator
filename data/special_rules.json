@@ -1,0 +1,674 @@
+{
+  "Hatred": {
+    "type": "modifier",
+    "phase": ["melee_combat"],
+    "effect": {
+      "reroll_failed_hits": true,
+      "duration": "first_round"
+    },
+    "when": "first_round",
+    "description": "Reroll failed to-hit rolls in first round of combat"
+  },
+  "Hatred (All Enemies)": {
+    "type": "modifier",
+    "phase": ["melee_combat"],
+    "effect": {
+      "reroll_failed_hits": true,
+      "duration": "always"
+    },
+    "description": "Reroll failed to-hit rolls every round"
+  },
+  "Great Weapons": {
+    "type": "modifier",
+    "phase": ["melee_combat"],
+    "effect": {
+      "strength_bonus": 2,
+      "always_strikes_last": true
+    },
+    "description": "+2 Strength, Always Strikes Last"
+  },
+  "Frenzy": {
+    "type": "modifier",
+    "phase": ["melee_combat", "psychology"],
+    "effect": {
+      "extra_attacks": 1,
+      "must_charge": true,
+      "immune_to_psychology": false
+    },
+    "description": "+1 Attack, must charge if able, lose if lose combat"
+  },
+  "Fear": {
+    "type": "trigger",
+    "phase": ["psychology"],
+    "effect": {
+      "enemy_ld_modifier": -1,
+      "test_timing": "on_charge"
+    },
+    "description": "Enemy must test to charge or be charged"
+  },
+  "Terror": {
+    "type": "trigger",
+    "phase": ["psychology"],
+    "effect": {
+      "enemy_ld_modifier": -1,
+      "test_timing": "on_sight",
+      "causes_fear": true
+    },
+    "description": "Causes Terror (stronger than Fear)"
+  },
+  "Stubborn": {
+    "type": "passive",
+    "phase": ["psychology"],
+    "effect": {
+      "ignore_combat_res": true,
+      "break_test_modifier": 0
+    },
+    "description": "Ignore combat resolution penalty on break tests"
+  },
+  "Immune to Psychology": {
+    "type": "passive",
+    "phase": ["psychology"],
+    "effect": {
+      "ignore_fear": true,
+      "ignore_terror": true,
+      "ignore_panic": true,
+      "auto_pass_psychology": true
+    },
+    "description": "Immune to all psychology effects"
+  },
+  "Unbreakable": {
+    "type": "passive",
+    "phase": ["psychology"],
+    "effect": {
+      "auto_pass_break": true,
+      "never_flees": true
+    },
+    "description": "Never takes break tests, never flees"
+  },
+  "Steadfast": {
+    "type": "passive",
+    "phase": ["psychology"],
+    "effect": {
+      "ignore_combat_res_if_rank_bonus": true,
+      "min_ranks": 3
+    },
+    "description": "Ignore CR penalty if more ranks than enemy"
+  },
+  "Devastating Charge": {
+    "type": "modifier",
+    "phase": ["melee_combat"],
+    "effect": {
+      "strength_bonus": 1
+    },
+    "when": "charge",
+    "description": "+1 Strength on the charge"
+  },
+  "Lance": {
+    "type": "modifier",
+    "phase": ["melee_combat"],
+    "effect": {
+      "strength_bonus": 2
+    },
+    "when": "charge",
+    "requirements": ["cavalry"],
+    "description": "+2 Strength when charging (cavalry only)"
+  },
+  "Spear": {
+    "type": "modifier",
+    "phase": ["melee_combat"],
+    "effect": {
+      "extra_rank_attacks": true,
+      "rank_bonus": 1
+    },
+    "description": "Fight in 3 ranks instead of 2"
+  },
+  "Halberd": {
+    "type": "modifier",
+    "phase": ["melee_combat"],
+    "effect": {
+      "strength_bonus": 1
+    },
+    "description": "+1 Strength"
+  },
+  "Armor Piercing": {
+    "type": "modifier",
+    "phase": ["shooting", "melee_combat"],
+    "effect": {
+      "ap_modifier": -1
+    },
+    "description": "-1 armor penetration",
+    "conditions": {
+      "variable": true
+    }
+  },
+  "Armor Piercing (-2)": {
+    "type": "modifier",
+    "phase": ["shooting", "melee_combat"],
+    "effect": {
+      "ap_modifier": -2
+    },
+    "description": "-2 armor penetration"
+  },
+  "Poisoned Attacks": {
+    "type": "modifier",
+    "phase": ["shooting", "melee_combat"],
+    "effect": {
+      "poisoned": true,
+      "always_wounds_on": 6
+    },
+    "description": "Always wound on unmodified 6"
+  },
+  "Flaming Attacks": {
+    "type": "modifier",
+    "phase": ["shooting", "melee_combat"],
+    "effect": {
+      "flaming": true,
+      "negates_regeneration": true
+    },
+    "description": "Negates Regeneration"
+  },
+  "Magical Attacks": {
+    "type": "modifier",
+    "phase": ["shooting", "melee_combat"],
+    "effect": {
+      "magical": true,
+      "hits_ethereal": true
+    },
+    "description": "Can harm Ethereal creatures"
+  },
+  "Killing Blow": {
+    "type": "trigger",
+    "phase": ["melee_combat"],
+    "effect": {
+      "auto_kill_on": 6,
+      "ignores_armor": true
+    },
+    "description": "Natural 6 to wound kills instantly",
+    "conditions": {
+      "does_not_affect": ["monsters", "characters_on_mounts"]
+    }
+  },
+  "Heroic Killing Blow": {
+    "type": "trigger",
+    "phase": ["melee_combat"],
+    "effect": {
+      "auto_kill_on": 6,
+      "ignores_armor": true,
+      "affects_all": true
+    },
+    "description": "Natural 6 to wound kills any model instantly"
+  },
+  "Multiple Wounds (D3)": {
+    "type": "modifier",
+    "phase": ["shooting", "melee_combat"],
+    "effect": {
+      "multiple_wounds": "d3"
+    },
+    "description": "Each wound causes D3 wounds"
+  },
+  "Multiple Wounds (D6)": {
+    "type": "modifier",
+    "phase": ["shooting", "melee_combat"],
+    "effect": {
+      "multiple_wounds": "d6"
+    },
+    "description": "Each wound causes D6 wounds"
+  },
+  "Always Strikes First": {
+    "type": "modifier",
+    "phase": ["melee_combat"],
+    "effect": {
+      "always_strikes_first": true,
+      "initiative_override": 10
+    },
+    "description": "Always strikes first unless enemy also has ASF"
+  },
+  "Always Strikes Last": {
+    "type": "modifier",
+    "phase": ["melee_combat"],
+    "effect": {
+      "always_strikes_last": true,
+      "initiative_override": 0
+    },
+    "description": "Always strikes last"
+  },
+  "Impact Hits (D6)": {
+    "type": "trigger",
+    "phase": ["melee_combat"],
+    "effect": {
+      "auto_hits_on_charge": "d6",
+      "strength_as_unit": true
+    },
+    "when": "charge",
+    "description": "Cause D6 automatic hits when charging"
+  },
+  "Impact Hits (D3)": {
+    "type": "trigger",
+    "phase": ["melee_combat"],
+    "effect": {
+      "auto_hits_on_charge": "d3",
+      "strength_as_unit": true
+    },
+    "when": "charge",
+    "description": "Cause D3 automatic hits when charging"
+  },
+  "Regeneration (4+)": {
+    "type": "passive",
+    "phase": ["combat_resolution"],
+    "effect": {
+      "regeneration_save": 4
+    },
+    "description": "4+ Regeneration save after armor",
+    "conditions": {
+      "negated_by": "flaming"
+    }
+  },
+  "Regeneration (5+)": {
+    "type": "passive",
+    "phase": ["combat_resolution"],
+    "effect": {
+      "regeneration_save": 5
+    },
+    "description": "5+ Regeneration save after armor",
+    "conditions": {
+      "negated_by": "flaming"
+    }
+  },
+  "Regeneration (6+)": {
+    "type": "passive",
+    "phase": ["combat_resolution"],
+    "effect": {
+      "regeneration_save": 6
+    },
+    "description": "6+ Regeneration save after armor",
+    "conditions": {
+      "negated_by": "flaming"
+    }
+  },
+  "Ward Save (4+)": {
+    "type": "passive",
+    "phase": ["combat_resolution"],
+    "effect": {
+      "ward_save": 4,
+      "ignores_ap": true
+    },
+    "description": "4+ Ward Save (ignores AP)"
+  },
+  "Ward Save (5+)": {
+    "type": "passive",
+    "phase": ["combat_resolution"],
+    "effect": {
+      "ward_save": 5,
+      "ignores_ap": true
+    },
+    "description": "5+ Ward Save (ignores AP)"
+  },
+  "Ward Save (6+)": {
+    "type": "passive",
+    "phase": ["combat_resolution"],
+    "effect": {
+      "ward_save": 6,
+      "ignores_ap": true
+    },
+    "description": "6+ Ward Save (ignores AP)"
+  },
+  "Ethereal": {
+    "type": "passive",
+    "phase": ["shooting", "melee_combat"],
+    "effect": {
+      "ignore_mundane_attacks": true,
+      "ward_save_vs_magic": 2
+    },
+    "description": "Ignore non-magical attacks, 2+ ward vs magical"
+  },
+  "Fly": {
+    "type": "passive",
+    "phase": ["movement"],
+    "effect": {
+      "ignore_terrain": true,
+      "march_and_charge": true,
+      "fly_movement": true
+    },
+    "description": "Can fly over terrain and units"
+  },
+  "Skirmish": {
+    "type": "passive",
+    "phase": ["movement", "shooting"],
+    "effect": {
+      "loose_formation": true,
+      "penalty_to_be_hit": -1,
+      "can_shoot_and_move": true,
+      "no_rank_bonus": true
+    },
+    "description": "-1 to hit when shooting at, can move and shoot"
+  },
+  "Fast Cavalry": {
+    "type": "passive",
+    "phase": ["movement", "shooting"],
+    "effect": {
+      "free_reform": true,
+      "can_shoot_360": true,
+      "march_and_shoot": true,
+      "vanguard": true
+    },
+    "description": "Free reform, march and shoot, vanguard"
+  },
+  "Scouts": {
+    "type": "passive",
+    "phase": ["deployment"],
+    "effect": {
+      "deploy_after_sides_chosen": true,
+      "may_deploy_forward": true
+    },
+    "description": "Deploy after sides, may deploy forward"
+  },
+  "Vanguard": {
+    "type": "passive",
+    "phase": ["deployment"],
+    "effect": {
+      "move_before_first_turn": true,
+      "vanguard_move": 12
+    },
+    "description": "Make 12\" move before first turn"
+  },
+  "Ambush": {
+    "type": "passive",
+    "phase": ["deployment"],
+    "effect": {
+      "deploy_from_table_edge": true,
+      "arrival_roll_required": true
+    },
+    "description": "Arrive from table edge on successful roll"
+  },
+  "Large Target": {
+    "type": "passive",
+    "phase": ["shooting"],
+    "effect": {
+      "easier_to_hit": 1,
+      "blocks_line_of_sight": true
+    },
+    "description": "+1 to hit when shooting at"
+  },
+  "Swiftstride": {
+    "type": "passive",
+    "phase": ["movement"],
+    "effect": {
+      "extra_dice_for_charge": true,
+      "extra_dice_for_flee": true,
+      "extra_dice_for_pursue": true
+    },
+    "description": "Roll extra dice for charge/flee/pursue"
+  },
+  "Random Movement": {
+    "type": "trigger",
+    "phase": ["movement"],
+    "effect": {
+      "movement_is_random": true,
+      "roll": "2d6"
+    },
+    "description": "Move 2D6\" in random direction"
+  },
+  "Stupidity": {
+    "type": "trigger",
+    "phase": ["start_of_turn"],
+    "effect": {
+      "ld_test_required": true,
+      "on_fail": "move_forward_only"
+    },
+    "description": "Test Ld at start of turn or move forward only"
+  },
+  "Animosity": {
+    "type": "trigger",
+    "phase": ["start_of_turn"],
+    "effect": {
+      "ld_test_required": true,
+      "on_fail_effects": ["bicker", "fight_amongst_themselves"]
+    },
+    "description": "Orcs & Goblins infighting"
+  },
+  "Frenzy": {
+    "type": "modifier",
+    "phase": ["melee_combat", "psychology"],
+    "effect": {
+      "extra_attacks": 1,
+      "must_charge": true,
+      "lose_if_lose_combat": true
+    },
+    "description": "+1 Attack, must charge, lose frenzy if lose combat"
+  },
+  "Strider": {
+    "type": "passive",
+    "phase": ["movement"],
+    "effect": {
+      "ignore_terrain_penalty": true,
+      "charge_through_terrain": true
+    },
+    "description": "Ignore penalties from difficult terrain"
+  },
+  "Forest Strider": {
+    "type": "passive",
+    "phase": ["movement"],
+    "effect": {
+      "ignore_forest_penalty": true
+    },
+    "description": "Ignore penalties from forests"
+  },
+  "Mountain Strider": {
+    "type": "passive",
+    "phase": ["movement"],
+    "effect": {
+      "ignore_mountain_penalty": true
+    },
+    "description": "Ignore penalties from mountains/hills"
+  },
+  "Breath Weapon": {
+    "type": "trigger",
+    "phase": ["shooting"],
+    "effect": {
+      "template_attack": true,
+      "strength": "varies",
+      "ap": 0
+    },
+    "description": "Breath weapon template attack"
+  },
+  "Stomp": {
+    "type": "trigger",
+    "phase": ["melee_combat"],
+    "effect": {
+      "auto_hits": "d6",
+      "strength": 5,
+      "no_armor_save": true
+    },
+    "when": "end_of_combat",
+    "description": "D6 S5 auto-hits at end of combat"
+  },
+  "Thunderstomp": {
+    "type": "trigger",
+    "phase": ["melee_combat"],
+    "effect": {
+      "auto_hits": "d6",
+      "strength": 5,
+      "multiple_wounds": "d3"
+    },
+    "when": "end_of_combat",
+    "description": "D6 S5 hits causing D3 wounds each"
+  },
+  "Breath Weapon (Str 4)": {
+    "type": "trigger",
+    "phase": ["shooting"],
+    "effect": {
+      "template_weapon": true,
+      "strength": 4,
+      "ap": 0,
+      "flaming": false
+    },
+    "description": "S4 breath weapon"
+  },
+  "Breath Weapon (Str 5 Flaming)": {
+    "type": "trigger",
+    "phase": ["shooting"],
+    "effect": {
+      "template_weapon": true,
+      "strength": 5,
+      "ap": 0,
+      "flaming": true
+    },
+    "description": "S5 flaming breath weapon"
+  },
+  "Scaly Skin (5+)": {
+    "type": "passive",
+    "phase": ["combat_resolution"],
+    "effect": {
+      "natural_armor": 5
+    },
+    "description": "5+ scaly skin armor save"
+  },
+  "Scaly Skin (4+)": {
+    "type": "passive",
+    "phase": ["combat_resolution"],
+    "effect": {
+      "natural_armor": 4
+    },
+    "description": "4+ scaly skin armor save"
+  },
+  "Natural Armor (6+)": {
+    "type": "passive",
+    "phase": ["combat_resolution"],
+    "effect": {
+      "natural_armor": 6
+    },
+    "description": "6+ natural armor"
+  },
+  "Inspiring Presence": {
+    "type": "passive",
+    "phase": ["psychology"],
+    "effect": {
+      "ld_bonus_range": 12,
+      "use_general_ld": true
+    },
+    "description": "Units within 12\" use General's Ld"
+  },
+  "Hold Your Ground": {
+    "type": "passive",
+    "phase": ["psychology"],
+    "effect": {
+      "reroll_break_test": true,
+      "range": 6
+    },
+    "description": "BSB allows reroll break tests within 6\""
+  },
+  "Loner": {
+    "type": "passive",
+    "phase": ["movement"],
+    "effect": {
+      "cannot_join_units": true,
+      "no_supporting_attacks": true
+    },
+    "description": "Cannot join units or benefit from support"
+  },
+  "Massive": {
+    "type": "passive",
+    "phase": ["melee_combat"],
+    "effect": {
+      "immune_to_stomp": true,
+      "stomps_infantry": true
+    },
+    "description": "Immune to stomp, stomps infantry"
+  },
+  "Unstable": {
+    "type": "trigger",
+    "phase": ["combat_resolution"],
+    "effect": {
+      "crumble_instead_of_break": true,
+      "lose_wounds_equal_to_cr_diff": true
+    },
+    "description": "Crumble instead of breaking"
+  },
+  "Undead": {
+    "type": "passive",
+    "phase": ["psychology", "combat_resolution"],
+    "effect": {
+      "immune_to_psychology": true,
+      "unstable": true,
+      "no_flee": true
+    },
+    "description": "Immune to psychology, unstable"
+  },
+  "Daemonic": {
+    "type": "passive",
+    "phase": ["psychology", "combat_resolution"],
+    "effect": {
+      "immune_to_psychology": true,
+      "unstable": true,
+      "ward_save": 5
+    },
+    "description": "Immune to psychology, unstable, 5+ ward"
+  },
+  "Expendable": {
+    "type": "passive",
+    "phase": ["psychology"],
+    "effect": {
+      "no_panic_from_casualties": true,
+      "no_panic_from_fleeing": true
+    },
+    "description": "Do not cause panic when destroyed"
+  },
+  "Magic Resistance (1)": {
+    "type": "passive",
+    "phase": ["magic"],
+    "effect": {
+      "dispel_dice_bonus": 1
+    },
+    "description": "+1 dispel dice against spells targeting unit"
+  },
+  "Magic Resistance (2)": {
+    "type": "passive",
+    "phase": ["magic"],
+    "effect": {
+      "dispel_dice_bonus": 2
+    },
+    "description": "+2 dispel dice against spells targeting unit"
+  },
+  "Magic Resistance (3)": {
+    "type": "passive",
+    "phase": ["magic"],
+    "effect": {
+      "dispel_dice_bonus": 3
+    },
+    "description": "+3 dispel dice against spells targeting unit"
+  },
+  "Immune to Panic": {
+    "type": "passive",
+    "phase": ["psychology"],
+    "effect": {
+      "ignore_panic": true
+    },
+    "description": "Immune to panic tests"
+  },
+  "Cold Blooded": {
+    "type": "passive",
+    "phase": ["psychology"],
+    "effect": {
+      "ld_test_uses_best_of_3d6": true
+    },
+    "description": "Use best 2 of 3D6 for Ld tests"
+  },
+  "Aquatic": {
+    "type": "passive",
+    "phase": ["movement"],
+    "effect": {
+      "move_through_water": true,
+      "ignore_water_terrain": true
+    },
+    "description": "Move freely through water"
+  },
+  "Burrowing": {
+    "type": "passive",
+    "phase": ["movement"],
+    "effect": {
+      "can_burrow": true,
+      "ambush_from_below": true
+    },
+    "description": "Can burrow and ambush"
+  }
+}

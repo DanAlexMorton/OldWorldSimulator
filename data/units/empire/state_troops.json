@@ -1,0 +1,66 @@
+{
+  "name": "State Troops",
+  "faction": "Empire",
+  "category": "Core",
+  "troop_type": "Infantry",
+  "base_size": "25mm",
+  
+  "profile": {
+    "M": 4,
+    "WS": 3,
+    "BS": 3,
+    "S": 3,
+    "T": 3,
+    "W": 1,
+    "I": 3,
+    "A": 1,
+    "Ld": 7
+  },
+  
+  "points": {
+    "base": 0,
+    "per_model": 5,
+    "min_unit_size": 10,
+    "max_unit_size": 40
+  },
+  
+  "equipment": {
+    "default": ["Hand Weapon", "Light Armor"],
+    "options": [
+      {
+        "name": "Shields",
+        "cost_per_model": 1,
+        "effect": "armour_save_6"
+      },
+      {
+        "name": "Spears",
+        "cost_per_model": 1,
+        "special_rules": ["Spear"]
+      },
+      {
+        "name": "Halberds",
+        "cost_per_model": 1,
+        "special_rules": ["Halberd"]
+      }
+    ]
+  },
+  
+  "command": {
+    "champion": {
+      "name": "Sergeant",
+      "cost": 10,
+      "A": 2
+    },
+    "musician": {
+      "cost": 5
+    },
+    "standard_bearer": {
+      "cost": 10
+    }
+  },
+  
+  "special_rules": [],
+  
+  "description": "The backbone of the Empire army. State Troops are disciplined militia from the provinces, armed with a variety of weapons."
+}
+

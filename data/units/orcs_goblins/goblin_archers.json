@@ -1,0 +1,60 @@
+{
+  "name": "Goblin Archers",
+  "faction": "Orcs & Goblins",
+  "category": "Core",
+  "troop_type": "Infantry",
+  "base_size": "25mm",
+  
+  "profile": {
+    "M": 4,
+    "WS": 2,
+    "BS": 3,
+    "S": 3,
+    "T": 3,
+    "W": 1,
+    "I": 3,
+    "A": 1,
+    "Ld": 5
+  },
+  
+  "points": {
+    "base": 0,
+    "per_model": 4,
+    "min_unit_size": 20,
+    "max_unit_size": 60
+  },
+  
+  "equipment": {
+    "default": ["Hand Weapon", "Bow"],
+    "options": []
+  },
+  
+  "weapons": {
+    "Bow": {
+      "range": 24,
+      "strength": 3,
+      "special_rules": []
+    }
+  },
+  
+  "command": {
+    "champion": {
+      "name": "Goblin Boss",
+      "cost": 10,
+      "A": 2
+    },
+    "musician": {
+      "cost": 5
+    },
+    "standard_bearer": {
+      "cost": 10
+    }
+  },
+  
+  "special_rules": ["Animosity"],
+  
+  "armour_save": null,
+  
+  "description": "Cowardly but numerous, Goblins pepper the enemy with arrows before fleeing at the first sign of trouble."
+}
+
