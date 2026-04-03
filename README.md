@@ -1,5 +1,8 @@
 # Warhammer: The Old World Battle Simulator
 
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+© 2025 Daniel Alexander Morton — personal and educational use only. Commercial use prohibited.
 **The most accurate TOW combat simulator ever built outside Games Workshop**
 
 A tournament-grade Python simulator for Warhammer: The Old World battles, featuring complete combat resolution, special rules, and Monte Carlo statistical analysis.
